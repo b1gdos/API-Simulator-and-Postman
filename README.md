@@ -1,6 +1,7 @@
 # API-Simulator-and-Postman
 Lab - Explore Rest APIs with API Simulator and Postman
 
+TEST AND VERIFICATION:
 ##################
 #     Part 1     #
 ##################
