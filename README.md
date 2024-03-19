@@ -2,9 +2,9 @@
 Lab - Explore Rest APIs with API Simulator and Postman
 
 TEST AND VERIFICATION:
-##################
-#     Part 1     #
-##################
+
+## Part 1 
+
 
 School Library site
 
@@ -14,7 +14,8 @@ First we are going to list the books by using GET /books
 *They are diferent types of parameter that we can use for have a more dip result in this task. 
 *Also we are using JSON format to see the different types of date.
 When we execute GET /books API we get the following result:
-```[
+```
+[
   {
     "id": 0,
     "title": "IP Routing Fundamentals",
@@ -47,16 +48,17 @@ When we execute GET /books API we get the following result:
   }
 ]
 ```
--This is a list of books in the library.
-We can get the same result by using curl via the terminal.
+This is a list of books in the library. We can get the same result by using curl via the terminal.
+
 curl -X GET "http://library.demo.local/api/v1/books" -H "accept: application/json" 
 
-We can also use custom search with curl in this case we use ?includeISBN=true:
+We can also use custom search with curl in this case we use: ?includeISBN=true
+
 http://library.demo.local/api/v1/books?includeISBN=true"  -H "accept: application/json" 
 
 We use a token in the POST /loginViaBasic API that allow us to login in the  API simulator to unlock differents features. 
 
-We add books using POST /books API, in order to complite this task we need to add a payload. 
+We add books using POST /books API, in order to complite this task we need to add a payload.  
 ```
 { 
   "id": 4, 
@@ -68,9 +70,7 @@ This way we were able to add multiple entrys in the school library.
 
 We can also list or delete books by the {id}
 
-##################
-#     Part 2     #
-##################
+## Part 2
 
 Use postman to make API call to the API Simulator
 
