@@ -14,7 +14,7 @@ First we are going to list the books by using GET /books
 *They are diferent types of parameter that we can use for have a more dip result in this task. 
 *Also we are using JSON format to see the different types of date.
 When we execute GET /books API we get the following result:
-[
+```[
   {
     "id": 0,
     "title": "IP Routing Fundamentals",
@@ -46,7 +46,7 @@ When we execute GET /books API we get the following result:
     "author": "Allan Johnson"
   }
 ]
-
+```
 -This is a list of books in the library.
 We can get the same result by using curl via the terminal.
 curl -X GET "http://library.demo.local/api/v1/books" -H "accept: application/json" 
@@ -57,13 +57,13 @@ http://library.demo.local/api/v1/books?includeISBN=true"  -H "accept: applicatio
 We use a token in the POST /loginViaBasic API that allow us to login in the  API simulator to unlock differents features. 
 
 We add books using POST /books API, in order to complite this task we need to add a payload. 
-
+```
 { 
   "id": 4, 
   "title": "IPv6 Fundamentals", 
   "author": "Rick Graziani" 
 }
-
+```
 This way we were able to add multiple entrys in the school library.
 
 We can also list or delete books by the {id}
@@ -80,6 +80,7 @@ When we open postman we are in an untitle request
 We can make GET, POST, PUT, PATCH, DELETE, etc. calls 
 
 If we give the URI http://library.demo.local/api/v1/books and send it we get the following information.
+```
 [
     {
         "id": 0,
@@ -112,7 +113,7 @@ If we give the URI http://library.demo.local/api/v1/books and send it we get the
         "author": "Allan Johnson"
     }
 ]
-
+```
 We can also use a toke to use the authorization area and there we can use an username and password. 
 
 To finish, in this task we were able to gather, add, delete information, using REST APIs. 
